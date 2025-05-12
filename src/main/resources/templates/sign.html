@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Login Page</title>
+  <style>
+    body {
+      padding:0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color:gray;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+	
+	button{
+		color: white;
+		background-color: blue;
+		padding: 10px;
+		border-radius: 50px;
+		
+	}
+	
+	button:hover{
+		cursor: pointer;
+		
+	}
+	
+    .left-section {
+      background-image: url(images/violet.gif);
+      color: white;
+      padding: 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .left-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+
+    .left-section ul li {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .left-section img {
+      width: 250px;
+      border-radius: 8px;
+    }
+
+    .right-section {
+      background-color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .right-section p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .right-section a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .login-btn img {
+      width: 16px;
+      margin-right: 10px;
+    }
+
+    .login-btn.google {
+      border-color: #4285f4;
+      color: #4285f4;
+    }
+
+    .login-btn.email {
+      border-color: #555;
+      color: #555;
+    }
+
+    .login-btn.apple {
+      border-color: black;
+      color: black;
+    }
+
+    .login-btn.facebook {
+      border-color: #1877f2;
+      color: #1877f2;
+    }
+
+    .or-divider {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .left-section,
+      .right-section {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        box-shadow: none;
+      }
+
+      .left-section h1 {
+        font-size: 2rem;
+      }
+
+      .left-section ul li {
+        font-size: 1rem;
+      }
+
+      .left-section img {
+        width: 80%;
+        margin-top: 20px;
+      }
+
+      .login-btn {
+        width: 90%;
+        max-width: none;
+      }
+
+      .or-divider {
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+
+      <h1>Success starts here</h1>
+      <ul>
+        <li>Over 700 categories</li>
+        <li>Quality work done faster</li>
+        <li>Access to talent and businesses across the globe</li>
+      </ul>
+    </div>
+    <div class="right-section">
+		
+		<a href="/register">Sign up</a>
+     
+      <button class="login-btn google"><img src="imges/google logo.png" alt="">Continue with Google</button>
+      <button class="login-btn email"><img src="imges/gmail.png" alt="">Continue with email/username</button>
+      <p class="or-divider">OR</p>
+      <button class="login-btn apple"><img src="imges/apple.png" alt="">Apple</button>
+      <button class="login-btn facebook"><img src="imges/fb.png" alt="">Facebook</button>
+	  
+	  <a href="/contact">
+	    <button type="button">New Registration</button>
+	  </a>
+
+
+    </div>
+
+      
+  </div>
+</body>
+</html>

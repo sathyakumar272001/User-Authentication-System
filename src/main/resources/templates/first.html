@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apple</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	
+  <link th:href="@{/css/styles.css}" rel="stylesheet">
+  <script th:src="@{/js/script.js}"></script>
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- Apple Logo (Left Icon) -->
+      <a href="/logo" class="navbar-logo">
+        <img src="imges/l4.png" alt="Apple Logo" class="logo-icon">
+      </a>
+
+      <!-- Toggler for Mobile -->
+      <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+
+      <!-- Navbar Menu -->
+      <div class="navbar-menu" id="navbarMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="/logo" class="nav-link">Store</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Mac</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">iPad</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">iPhone</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Watch</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">AirPods</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">TV</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Entertainment</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Registration</a></li>
+        </ul>
+
+        <!-- Right Side: Search Icon and Register Button -->
+        <div class="navbar-right">
+          <a href="#" class="nav-icon search-icon">🔍</a>
+          <a href="/sign" class="register-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  
+  
+  
+  
+  <section class="store-section">
+    <div class="container">
+      <!-- Main Heading -->
+      <h1 class="store-heading">
+        Store. The best way to buy the products you love.
+      </h1>
+
+      <!-- Sidebar (Right) -->
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <img th:src="@{/img/specialist-icon.png}" alt="Specialist Icon" class="sidebar-icon">
+          <div class="sidebar-text">
+            <p>Need shopping help?</p>
+            <a href="#" class="sidebar-link">Ask a Specialist ></a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+			<a href="#" class="nav-link">
+			    <img th:src="@{/imges/g1.png}" alt="Store Icon" class="sidebar-icon">
+			</a>
+          <div class="sidebar-text">
+            <p>Visit an Apple Store</p>
+            <a href="#" class="sidebar-link">Find one near you ></a>
+          </div>
+        </div>
+      </div>
+	  
+	  
+
+      <!-- Product Categories -->
+      <div class="product-categories">
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>Mac</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/iphone.png" alt="Mac" class="category-icon">
+          <p>iPhone</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/ipad.jpg" alt="Mac" class="category-icon">
+          <p>iPad</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/watch.jpg" alt="Mac" class="category-icon">
+          <p>Apple Watch</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>AirPods</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>AirTag</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>Apple TV 4K</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>HomePod</p>
+        </div>
+        <div class="category-item">
+			<img src="/imges/mac.jpg" alt="Mac" class="category-icon">
+          <p>Accessories</p>
+        </div>
+      </div>
+
+      <!-- Subheading -->
+      	
+  </section>
+  <hr>
+  
+  
+  
+  <div class="Productone">
+      <h2 class="title"><strong>The latest.</strong> Take a look at what’s new right now.</h2>
+      <div class="products">
+          <div class="card ">
+              <img src="/imges/p1.jpg" alt="Apple Specialist">
+              <h3>iPhone 16 Pro</h3>
+              <p class="highlight">Apple Intelligence</p>
+              <p class="price">From ₹119900.00</p>
+          </div>
+          <div class="card">
+              <img src="/imges/p2.jpg" alt="Apple Specialist">
+              <h3>MacBook Air</h3>
+              <p class="highlight">Apple Intelligence</p>
+              <p class="price">From ₹99900.00</p>
+          </div>
+          <div class="card">
+              <img src="/imges/p3.jpg" alt="Apple Specialist">
+              <h3>iPad Air</h3>
+              <p class="highlight">Apple Intelligence</p>
+              <p class="price">From ₹59900.00</p>
+          </div>
+          <div class="card">
+              <img src="/imges/p4.jpg" alt="Apple Specialist">
+              <h3>Apple Watch Series 10</h3>
+              <p class="sub">Thinstant classic.</p>
+              <p class="price">From ₹46900.00</p>
+          </div>
+          <div class="card new">
+              <img src="/imges/p5	.jpg" alt="Apple Specialist">
+              <h3>iPhone 16e</h3>
+              <p class="highlight">Apple Intelligence</p>
+              <p class="price">From ₹59900.00</p>
+          </div>
+      </div>
+  </div>
+
+  
+  
+  
+  
+  
+	 
+	 <section class="support-section">
+	         <h1>Help is here. Whenever and however you need it.</h1>
+	         <div class="cards-container">
+	             <!-- Card 1 -->
+	             <div class="service-card ">
+	                 <h3>APPLE SPECIALIST</h3>
+	                 <p>Shop one on one with a Specialist online.</p>
+	                 <img src="/imges/man.jpg" alt="Apple Specialist">
+	             </div>
+	             <!-- Card 2 -->
+	             <div class="service-card">
+	                 <h3>TODAY AT APPLE</h3>
+	                 <p>Join free sessions at your Apple Store. Learn about the latest features and how to go further with your Apple devices.</p>
+	                 <img src="/imges/group.jpg" alt="Today at Apple">
+	             </div>
+	             <!-- Card 3 -->
+	             <div class="service-card ">
+	                 <h3>BUSINESS</h3>
+	                 <p>From enterprise to small business, we’ll work with you.<sup>1</sup></p>
+	                 <img src="/imges/enter.jpg" alt="Business Support">
+	             </div>
+	             <!-- Card 4 -->
+	             <div class="service-card">
+	                 <h3>PERSONAL SETUP</h3>
+	                 <p>Set up your new device with help from a Specialist. Let us guide you through data transfer, the latest features and more, in an online, one-to-one session.</p>
+	                 <img src="/imges/device.jpg" alt="Personal Setup">
+	             </div>
+	         </div>
+	     </section>
+		 
+		 <div class="responsive">
+		    <div class="gallery">
+		      <a target="_blank" href="img_5terre.jpg">
+		        <img src="/imges/m1.jpg" alt="iPhone 15 Pro">
+		      </a>
+		      <div class="desc">iPhone 15 Pro - Price in INR: ₹74,900</div>
+		    </div>
+		 </div>
+
+		 <div class="responsive">
+		    <div class="gallery">
+		      <a target="_blank" href="img_forest.jpg">
+		        <img src="/imges/m2.jpg" alt="iPhone 15">
+		      </a>
+		      <div class="desc">iPhone 15 - Price in 
+				    INR: ₹64,900</div>
+		    </div>
+		 </div>
+
+		 <div class="responsive">
+		    <div class="gallery">
+		      <a target="_blank" href="img_lights.jpg">
+		        <img src="/imges/m3.jpg" alt="iPhone 14">
+		      </a>
+		      <div class="desc">iPhone 14 - Price in   INR: ₹59,900</div>
+		    </div>
+		 </div>
+
+		 <div class="responsive">
+		    <div class="gallery">
+		      <a target="_blank" href="img_mountains.jpg">
+		        <img src="/imges/m4.jpg" alt="iPhone SE">
+		      </a>
+		      <div class="desc">iPhone SE - Price in INR: ₹34,900</div>
+		    </div>
+		 </div>
+
+		 <div class="clearfix"></div>
+		 
+		 
+		
+	  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="quick-links-container">
+      <h3>Quick Links</h3>
+      <div class="paragraphs">
+          <p><strong>Order Status • Shopping Help • Your Saves</strong></p>
+          <p>∆ Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to English (Australia, Canada, Ireland, New Zealand, South Africa, UK or US), as part of an iOS 18, iPadOS 18 and macOS Sequoia software update. Additional features and Chinese (Simplified), English (India, Singapore), French, German, Italian, Japanese, Korean, Portuguese (Brazil) and Spanish language support available in early April, with more languages coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages.</p>
+          <p>◊◊ Monthly pricing is after purchase using EMI with qualifying cards at 15.99% p.a. over a 12-month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions.</p>
+          <p><strong>Representative example:</strong><br>A purchase of ₹79900.00 repaid over 12 months with an interest rate of 15.99% p.a. requires monthly payments of ₹7249.00. Total amount payable: ₹86988.00. Total interest paid to bank: ₹7088.00.</p>
+          <p>§ No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3-, 6-, 9-, or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are available with No Cost EMI on 3- and 6-month tenures only. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. <a href="#">Terms apply.</a></p>
+          <p><strong>Representative example:</strong><br>A purchase of ₹79900.00 repaid over 12 months with an interest rate of 15.99% p.a. and No Cost EMI savings of ₹6514.00 requires monthly payments of ₹6658.00. Total amount payable: ₹79900.00.</p>
+          <p>§§ Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. <a href="#">Click here</a> to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. <a href="#">Additional terms apply.</a> Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.</p>
+          <p>* Mac, iPad, and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad, and Apple Watch. Trade-in values will vary based on the condition, year and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel or limit the quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+          <p>° Apple TV+ offer available to new and qualified returning subscribers only. ₹99/month after free trial. Only one offer per Apple Account and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices that you or your family purchase. This offer is not available if you or your family have previously accepted an Apple TV+ 3 months free or 1 year free offer. Offer valid for three months after eligible device is activated. Plan automatically renews until cancelled. Restrictions and other <a href="#">terms</a> apply.</p>
+          <p>1. Special pricing available to qualified customers. To learn more about how to start qualifying for special pricing, talk to an Apple Specialist in a store or give us a call on 000800 040 1966.</p>
+          <p>⁺ New subscribers only. ₹119.00/month after trial. Offer is available for new Apple Music subscribers with a new eligible device for a limited time only. Offer redemption for eligible audio devices requires connecting or pairing to an Apple device running the latest iOS or iPadOS. Offer redemption for Apple Watch requires connecting or pairing to an iPhone running the latest iOS. Offer good for three months after eligible device activation. Only one offer per Apple Account, regardless of the number of eligible devices you purchase. Plan automatically renews until cancelled. Restrictions and other <a href="#">terms</a> apply.</p>
+          <p>** New and qualified returning subscribers only. ₹99/month after free trial. Only one offer per Apple Account and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. This offer is not available if you or your Family have previously accepted an Apple Arcade 3-month-free offer. Offer is valid for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other <a href="#">terms</a> apply.</p>
+          <p>‡ Listed pricing is Maximum Retail Price (inclusive of all taxes).</p>
+          <p>We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a previous visit to Apple.</p>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer>
+     <div class="footer-logo">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Apple_logo_black.svg" alt="Apple Logo">
+     </div>
+     <nav>
+       <ul class="footer-nav">
+         <li><a href="#"  style="font-weight: bold;" >Shop and Learn </a>
+           <ul>
+             <li><a href="#">Store</a></li>
+             <li><a href="#">Mac</a></li>
+             <li><a href="#">iPad</a></li>
+             <li><a href="#">iPhone</a></li>
+             <li><a href="#">Watch</a></li>
+             <li><a href="#">AirPods</a></li>
+             <li><a href="#">TV & Home</a></li>
+             <li><a href="#">AirTag</a></li>
+             <li><a href="#">Accessories</a></li>
+             <li><a href="#">Gift Cards</a></li>
+             <li><a href="#">Apple Wallet</a></li>
+             <li><a href="#">Wallet</a></li>
+           </ul>
+         </li>
+         <li><a href="#" style="font-weight: bold;" >Account</a>
+           <ul>
+			<li><a href="#" >Manage Your Apple Account</a></li>
+
+             <li><a href="#">Apple Store Account</a></li>
+             <li><a href="#">iCloud.com</a></li>
+           </ul>
+         </li>
+         <li><a href="#"  style="font-weight: bold;"    >Entertainment</a>
+           <ul>
+             <li><a href="#">Apple One</a></li>
+             <li><a href="#">Apple TV+</a></li>
+             <li><a href="#">Apple Music</a></li>
+             <li><a href="#">Apple Arcade</a></li>
+             <li><a href="#">Apple Podcasts</a></li>
+             <li><a href="#">Apple Books</a></li>
+             <li><a href="#">App Store</a></li>
+           </ul>
+         </li>
+         <li><a href="#"   style="font-weight: bold;"          >Apple Store</a>
+           <ul>
+             <li><a href="#">Find a Store</a></li>
+             <li><a href="#">Genius Bar</a></li>
+             <li><a href="#">Today at Apple</a></li>
+             <li><a href="#">Apple Summer Camp</a></li>
+             <li><a href="#">Ways to Buy</a></li>
+             <li><a href="#">Apple Trade In</a></li>
+             <li><a href="#">Recycling Programme</a></li>
+             <li><a href="#">Find your Order - Apple</a></li>
+             <li><a href="#">Shopping Help</a></li>
+           </ul>
+         </li>
+         <li><a href="#"   style="font-weight: bold;"       >For Business</a>
+           <ul>
+             <li><a href="#">Apple and Business</a></li>
+           </ul>
+         </li>
+         <li><a href="#"  style="font-weight: bold;"     >For Education</a>
+           <ul>
+             <li><a href="#">Apple and Education</a></li>
+             <li><a href="#">Shop for Education</a></li>
+             <li><a href="#">Shop for University</a></li>
+           </ul>
+         </li>
+         <li><a href="#"   style="font-weight: bold;"         >For Healthcare</a>
+           <ul>
+             <li><a href="#">Apple in Healthcare</a></li>
+             <li><a href="#">Health on Apple Watch</a></li>
+           </ul>
+         </li>
+         <li><a href="#"   style="font-weight: bold;"       >Apple Values</a>
+           <ul>
+             <li><a href="#">Accessibility</a></li>
+             <li><a href="#">Environment</a></li>
+             <li><a href="#">Privacy</a></li>
+             <li><a href="#">Supply Chain</a></li>
+           </ul>
+         </li>
+         <li><a href="#"   style="font-weight: bold;"	       >About Apple</a>
+           <ul>
+             <li><a href="#">Newsroom</a></li>
+             <li><a href="#">Apple Leadership</a></li>
+             <li><a href="#">Career Opportunities</a></li>
+             <li><a href="#">Investors</a></li>
+             <li><a href="#">Ethics & Compliance</a></li>
+             <li><a href="#">Events</a></li>
+             <li><a href="#">Contact Apple</a></li>
+           </ul>
+         </li>
+       </ul>
+     </nav>
+     <div class="footer-info">
+       <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 000800 040 1966.</p>
+       <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+       <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales Policy</a> | <a href="#">Legal</a> | <a href="#">Site Map</a></p>
+       <p>India</p>
+     </div>
+   </footer>
+
+ 
+</body>
+</html>

@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.header .logo img {
+    height: 24px;
+   
+}  
+/* Add this to your existing CSS file (logo.css) */
+
+/* Initial state for elements to fade in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Active state when element is in view */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    
+    border-bottom: 2px solid #0071e3;
+   
+}
+
+.main {
+   width: 100%;
+    height: 100vh;   
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.main p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: white;
+}
+
+.iphone-image {
+    margin: 30px auto;
+    max-width: 400px;
+    display: block;
+}
+
+.cta-buttons {
+    margin-top: 30%;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    color: black;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons a:hover {
+    background-color: #0056b3;
+}
+
+.down {
+    margin-top: 50px;
+    font-size: 0.8rem;
+}
+.main{
+    background-image: url(/imges/pro1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main1{
+    background-image: url(/imges/16plus1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main1 h1{
+   color: white;
+    font-size: 3rem;
+    padding-top: 50px;
+
+}
+.main1 p{
+    color: black;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+.main2{
+    background-image: url(/imges/airpods.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main2 h1{
+   color: white;
+    font-size: 3rem;
+    padding-top: 50px;
+
+}
+.main2 p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+/* General Styles */
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;    
+}
+
+.card {
+    width: 50%;
+    height: auto;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.card-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.para{
+    margin: 30px;
+  background-color: black;
+}
+.para p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+    
+}
+.para a {
+    color: #007aff;
+    text-decoration: none;
+
+}
+.para a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer-column h3 {
+    color: lightseagreen;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+   
+}
+.footer-column ul li {
+    margin-bottom: 5px;
+    text-align: start;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #333;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #0071e3;
+}
+.footer-bottom p{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
